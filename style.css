@@ -1,0 +1,178 @@
+:root{
+    /* Color */ 
+    --background-color: rgb(250,249,249);
+    --red-color: #EA3323;
+    --blue-color: rgb(42,94,204);
+    --white-color: rgb(255,255,255);
+    --black-color: rgb(0, 0, 0);
+    --grey-dark-color: rgb(39,39,39);
+    --grey-light-color: #ECECEC;
+
+    /* Size */
+
+    /* Font Size */
+    
+}
+
+*{
+    background-color: transparent;
+    border: 0px;
+    margin: 0px; 
+    padding: 0px;
+    list-style: none;
+    
+}
+
+html{
+    background-color: var(--background-color);
+}
+.nav{
+    background-color: var(--grey-dark-color);
+    color: var(--white-color);
+    text-decoration: var(--white-color);
+
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 15px 20px;
+
+    font-size: 20px;
+}
+.nav .logo i{
+    color: var(--red-color);
+}
+.nav .logo, .nav .icon i{
+    margin-left: 10px;
+}
+
+/*메인영상*/
+.main-video{
+    max-height: 90vh;
+}
+iframe{
+    width: 100%;
+    height: 65vh;
+}
+
+/*정보*/
+.main-intro{
+    margin-top: 15px;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+.main-intro .hashtag{
+    color: var(--blue-color);
+}
+.main-intro .info{
+    display:inline-block;
+    margin-top: 5px;
+    color: rgb(98, 98, 98);
+}
+.main-intro .info{
+    display: flex;
+    justify-content: space-between;
+}
+.main-intro .info .main-icons{
+    display: flex;
+}
+.main-intro .info .main-icons li{
+    margin-left: 15px;
+}
+.main-intro .main-icons i, .main-intro .main-icons span{
+    color: rgb(144,144,144);
+}
+.main-icons .like i, .main-icons .like span{
+    color: var(--blue-color);
+}
+.main-intro .main-icons i{
+    font-size: 20px;
+}
+.main-intro .main-icons span{
+    font-size: 15px;
+}
+
+.profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1.5px solid;
+    border-bottom: 1.5px solid;
+    border-color: rgb(219, 219, 219);
+}
+.profile-personal{
+    display: flex;
+    align-items: center;
+}
+.profile-personal div span{
+    display: block;
+}
+.profile-personal .name{
+    color:rgb(0, 0, 0);
+}
+.profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.subscriber{
+    color: rgb(98, 98, 98);
+    font-size: 12px;
+}
+.profile button{
+    border-radius: 2px;
+    width: 60px;
+    height: 35px;
+    background-color:rgb(230, 230, 230);
+    color: rgb(98, 98, 98);
+    margin-right: 15px;
+}
+.profile i{
+    color: rgb(182, 182, 182);
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+/*추천영상목록*/
+.list{
+    margin-top: 15px;
+    margin-left: 30px;
+}
+.list-element{
+    display: flex;
+}
+.list .list-element span{
+    display: block;
+}
+
+.list-element img{
+    width: 175px;
+    height: 110px;
+    margin-right: 10px;
+}
+.list-element .title{
+    font-size: 14px;
+    
+}
+.name, .view, .date{
+    color: rgb(129, 129, 129);
+    font-size: 13px;
+}
+
+/* 화면의 너비가 768px 이상 일때 적용 */
+@media (min-width:768px){
+    .main-intro {
+        width: 60vw;
+    }
+    .list{
+        width: 40vw;
+        margin-left: 10px;
+    }
+    .bottom{
+        display: flex;
+    }
+}    

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유튜브 클론코딩</title>
+
+    <!--css파일 연결-->
+    <link rel="stylesheet" href="style.css">    
+    <!--js파일 연결-->
+    <script src="main.js" defer></script>
+    <!--fontawesome 연결-->
+    <script src="https://kit.fontawesome.com/63898db18f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!--네비게이션바-->
+    <header class="nav">
+        <div>
+            <i class="fas fa-bars"></i>
+            <span class="logo">
+                <i class="fab fa-youtube"></i><span>YouTube</span>
+            </span>
+        </div>
+        
+        <div class="icon">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-ellipsis-v"></i>
+        </div>
+    </header>
+    
+    <!--영상-->
+    <section>
+        <div class="main-video">
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iAajM_g88cw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <div class="bottom">
+        <!--메인영상설명-->
+        <section class="main-intro">
+            <span class="hashtag">#김 #송 #하</span>
+            <h2 class="title">유튜브 클론코딩</h2>
+
+            <div class="info">
+                <span>조회수 20만  2000.10.25</span>
+                <!--버튼-->
+                <ul class="main-icons">    
+                    <li class="like">
+                        <button><i class="fas fa-thumbs-up"></i></button>
+                        <span>10만</span>
+                    </li> 
+                    <li>
+                        <button><i class="fas fa-thumbs-down"></i></button>
+                        <span>0</span>
+                    </li>
+                    <li>
+                        <button><i class="fas fa-share-square"></i></button>
+                        <span>공유</span>
+                    </li>
+                    <li>
+                        <button><i class="fas fa-plus"></i></button>
+                        <span>저장</span>
+                    </li>
+                    <li>
+                        <button><i class="fas fa-ellipsis-h"></i></button>
+                    </li>
+                </ul>
+            </div>
+            
+            
+            <!--프로필-->
+            <div class="profile">
+                <div class="profile-personal">
+                    <div class="img"><img src="image/김송하.JPG" alt="프로필"></div>
+                    <div>
+                        <span class="name">Kim SongHa</span>
+                        <span class="subscriber">구독자 100만</span>
+                    </div>
+                </div>
+                <div>
+                    <button>구독중</button>
+                    <i class="fas fa-bell"></i>    
+                </div>
+            </div>
+
+    
+        </section>
+        
+        <!--추천영상목록-->
+        <section class="list">
+            <div class="list-element">
+               <div><img src="image/01_영상.png" alt=""> </div>
+               <div class="info">
+                <span class="title">[Playlist] Stylish Summer Pop</span>
+                <span class="name">김송하</span>
+                <span class="view">조회수 100만회</span>
+                <span class="date">1시간 전</span>
+               </div>
+            </div>
+            <div class="list-element">
+                <div><img src="image/01_영상.png" alt=""> </div>
+               <div class="info">
+                <span class="title">[Playlist] Stylish Summer Pop</span>
+                <span class="name">김송하</span>
+                <span class="view">조회수 100만회</span>
+                <span class="date">1시간 전</span>
+               </div>
+            </div>
+            <div class="list-element">
+                <div><img src="image/01_영상.png" alt=""> </div>
+               <div class="info">
+                <span class="title">[Playlist] Stylish Summer Pop</span>
+                <span class="name">김송하</span>
+                <span class="view">조회수 100만회</span>
+                <span class="date">1시간 전</span>
+               </div>
+            </div>
+            <div class="list-element">
+                <div><img src="image/01_영상.png" alt=""> </div>
+               <div class="info">
+                <span class="title">[Playlist] Stylish Summer Pop</span>
+                <span class="name">김송하</span>
+                <span class="view">조회수 100만회</span>
+                <span class="date">1시간 전</span>
+               </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
